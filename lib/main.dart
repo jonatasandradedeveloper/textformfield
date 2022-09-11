@@ -30,9 +30,15 @@ class MyApp extends StatelessWidget {
                 margin: const EdgeInsets.all(30),
                 child: TextFormField(
                   decoration: const InputDecoration(
-                      icon: Icon(Icons.email),
-                      hintText: 'Digite seu e-mail',
-                      labelText: 'E-mail'),
+                    icon: Icon(Icons.email),
+                    hintText: 'Digite seu e-mail',
+                    hintStyle: TextStyle(color: Colors.black, fontSize: 18),
+                    labelText: 'E-mail',
+                    labelStyle: TextStyle(color: Colors.black, fontSize: 18),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(12))),
+                  ),
+                  style: const TextStyle(color: Colors.red),
                 ),
               ),
               Container(
@@ -40,9 +46,15 @@ class MyApp extends StatelessWidget {
                 child: TextFormField(
                   obscureText: true,
                   decoration: const InputDecoration(
-                      icon: Icon(Icons.lock),
-                      hintText: 'Digite sua senha',
-                      labelText: 'Senha'),
+                    icon: Icon(Icons.lock),
+                    hintText: 'Digite sua senha',
+                    hintStyle: TextStyle(color: Colors.black, fontSize: 18),
+                    labelText: 'Senha',
+                    labelStyle: TextStyle(color: Colors.black, fontSize: 18),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(12))),
+                  ),
+                  style: const TextStyle(color: Colors.red),
                 ),
               ),
             ],
